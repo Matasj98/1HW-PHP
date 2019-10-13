@@ -6,6 +6,13 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit2167a40d241e1fe0555be5218860b573
 {
+    public static $files = array (
+        '842bfde60bce97d1e606dec7206721ee' => __DIR__ . '/../..' . '/app/calculate.php',
+        '6657cac25c8b7cf121344475c42c87fc' => __DIR__ . '/../..' . '/app/calculate2.php',
+        '8407ecd55c87cb7cfe9093435f4e48d8' => __DIR__ . '/../..' . '/app/calculate3.php',
+        '2d78c1918e8bde801d9466819063391c' => __DIR__ . '/../..' . '/app/calculate4.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
@@ -14,10 +21,6 @@ class ComposerStaticInit2167a40d241e1fe0555be5218860b573
         'P' => 
         array (
             'Psr\\Log\\' => 8,
-        ),
-        'N' => 
-        array (
-            'Nfq\\' => 4,
         ),
         'L' => 
         array (
@@ -33,10 +36,6 @@ class ComposerStaticInit2167a40d241e1fe0555be5218860b573
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
-        'Nfq\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
         'League\\CLImate\\' => 
         array (
@@ -132,10 +131,6 @@ class ComposerStaticInit2167a40d241e1fe0555be5218860b573
         'League\\CLImate\\Util\\Writer\\StdErr' => __DIR__ . '/..' . '/league/climate/src/Util/Writer/StdErr.php',
         'League\\CLImate\\Util\\Writer\\StdOut' => __DIR__ . '/..' . '/league/climate/src/Util/Writer/StdOut.php',
         'League\\CLImate\\Util\\Writer\\WriterInterface' => __DIR__ . '/..' . '/league/climate/src/Util/Writer/WriterInterface.php',
-        'Nfq\\Akademija\\NotTyped\\calculate' => __DIR__ . '/../..' . '/app/calculate2.php',
-        'Nfq\\Akademija\\Soft\\calculate' => __DIR__ . '/../..' . '/app/calculate3.php',
-        'Nfq\\Akademija\\Strict\\calculate' => __DIR__ . '/../..' . '/app/calculate4.php',
-        'Nfq\\calculate' => __DIR__ . '/../..' . '/app/calculate.php',
         'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/AbstractLogger.php',
         'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/Psr/Log/InvalidArgumentException.php',
         'Psr\\Log\\LogLevel' => __DIR__ . '/..' . '/psr/log/Psr/Log/LogLevel.php',

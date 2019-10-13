@@ -1,8 +1,11 @@
 {
     "autoload": {
-        "psr-4": {
-            "Nfq\\": "app"
-        }
+        "files": [
+            "app/calculate.php",
+            "app/calculate2.php",
+            "app/calculate3.php",
+            "app/calculate4.php"
+        ]
     },
     "require": {
         "league/climate": "^3.5"
