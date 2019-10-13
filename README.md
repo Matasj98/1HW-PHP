@@ -14,3 +14,5 @@ ji ir turi gauti tokio tipo kintamuosius, jei gražins kito tipo, tai gausim ero
 kintamieji. Čia negaunam error, nes nurodyta, jog gausim int kintamuosius, todėl string konvertuoja į skaičių, nes įmanoma, jei būtų raidė
 ar simbolis, tai būtų error. Taip pat gražina int tipo kinamaji funkcija, todėl viskas suveikia. Jei ištrintume jog funkcija gauna tik 
 (...$numbers), tai neveiktų, nes gauna strint, o strictas nekonvertuoja. Pagal default strict_types = 0. 
+
+Taip pat nespausdinami error pagal salyga.
