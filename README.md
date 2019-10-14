@@ -1,16 +1,15 @@
 # 1HW-PHP
 
-Nfq\calculateHomeWorkSum - siunčiam skaičius ir string, bet php pakankamai protingas, todėl tikrina ar string galima prilyginti
-skaičiui, jei būtų 'd', tai neskaičiuotų tiesiog, o dabar kadangi '1', tai prideda.
+root - siunčiam skaičius ir string, bet php pakankamai protingas, todėl tikrina ar string galima prilyginti
+skaičiui. Jei būtų 'd' ar koks kitas raidžių simbolių string, tai jo reikšmė nepridedama, o dabar kadangi '1', tai prideda.
 
 Nfq\Akademija\NotTyped\calculateHomeWorkSum - viskas vyksta taip pat, kaip ir prieš tai aprašytame, tik funkcija turi return'inti (int) 
-tipo kintamaji, todėl vietoj 6.2, suapvalina.
+tipo kintamaji, todėl vietoj 6.2 panaikina dali esama po kablelio, todėl 6, jei būtų 6.9, taip pat 6, nes neapvalina.
 
 Nfq\Akademija\Soft\calculateHomeWorkSum - funkcijoje nurodyta, kad gaunami kintamieji bus int tipo ir nurodyta, jog funkcija gražins
-int tipo kintamaji, todėl iškart float tipo kintamaji suapvalina ir string kintamaji jei įmanoma sulygina su int ir return int kintamasis.
+int tipo kintamaji, todėl iškart float tipo kintamaji paverčia int kintamuoju, t.y nukanda viska po kablelio ir neapvalina, jei 2.2, = 2, jei
+2.9 = 2.
 
-Nfq\Akademija\Strict\calculateHomeWorkSum - visų pirma declare(strict_types=1) reiškia, kad jei funkcija turi gražinti string ar int, tai 
-ji ir turi gauti tokio tipo kintamuosius, jei gražins kito tipo, tai gausim erorr ir negražins reikšmės. Kitaip tariant turi būti tik vieno tipo 
-kintamieji. Čia negaunam error, nes nurodyta, jog gausim int kintamuosius, todėl string konvertuoja į skaičių, nes įmanoma, jei būtų raidė
-ar simbolis, tai būtų error. Taip pat gražina int tipo kinamaji funkcija, todėl viskas suveikia. Jei ištrintume jog funkcija gauna tik 
-(...$numbers), tai neveiktų, nes gauna strint, o strictas nekonvertuoja. Pagal default strict_types = 0. 
+Nfq\Akademija\Strict\calculateHomeWorkSum - declare(strict_types=1), reiškia, kad scalar types nebėra default, todėl funkcija priims arba int arba float šiuo atveju, o '1' konvertuojamas arba į int arba į float (pvz '1.2'). Jei vietoj '1' būtų raidė ar simbolis, tai error, nes string, turi būti vieno tipo kintamieji, int arba float, taip pat nurodyta jog funkcija gražina :int, todėl iškart neveiktų, jei būtų string(pvz: 'df', nes nepriskiriamas int arba float). Funkcija priima float ir int todėl nes iškart nurodyta jog funkcija gaus int - (int...$numbers), tai float reikšmės tampa int, nukandami skaičiai po kablelio.
+
+error sugaudau su set_error_handler, bet jis nesugauna fatal error, tai fatal pagaunu su catch.

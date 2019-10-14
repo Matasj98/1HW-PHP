@@ -1,5 +1,5 @@
 <?php
-    namespace Nfq;
+    namespace root;
 
     function calculateHomeWorkSum(...$numbers){
             $sum = 0;

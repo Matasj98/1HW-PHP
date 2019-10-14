@@ -1,4 +1,26 @@
 {
+    "name": "matasj98/1HW-PHP",
+    "description": "Php intro home work",
+    "version": "1.0.1",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "home work",
+        "php"
+    ],
+    "homepage": "https://github.com/Matasj98/1HW-PHP",
+    "authors": [
+       { 
+            "name": "Matas Jarilinas",
+            "email": "matas.jarilinas@stud.vgtu.lt",
+            "homepage": "http://Matasj98.github.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "league/climate": "^3.5"
+    },
+    "require-dev": {"league/climate": "3.5.0"},
     "autoload": {
         "files": [
             "app/calculate.php",
@@ -6,8 +28,5 @@
             "app/calculate3.php",
             "app/calculate4.php"
         ]
-    },
-    "require": {
-        "league/climate": "^3.5"
     }
 }
